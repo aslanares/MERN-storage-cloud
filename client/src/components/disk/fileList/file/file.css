@@ -1,0 +1,125 @@
+.file {
+  padding: 15px 15px 15px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1.5fr);
+  align-items: center;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.04);
+}
+.file:hover {
+  transform: scale(1.02);
+  cursor: alias;
+}
+.file__img {
+  justify-self: center;
+  height: 40px;
+}
+.file__date {
+  grid-column-start: 5;
+  justify-self: center;
+}
+.file__size {
+  grid-column-start: 6;
+  justify-self: center;
+}
+.file__btn {
+  display: none;
+}
+.file:hover .file__date {
+  grid-column-start: 3;
+}
+.file:hover .file__size {
+  grid-column-start: 4;
+}
+.file:hover .file__download {
+  font: normal 16px "Roboto", sans-serif;
+  grid-column-start: 5;
+  display: block;
+  background: #28A745;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+}
+.file:hover .file__download path {
+  fill: #fff;
+}
+.file:hover .file__delete {
+  font: normal 16px "Roboto", sans-serif;
+  grid-column-start: 6;
+  display: block;
+  background: #DC3545;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+}
+.file:hover .file__delete path {
+  fill: #fff;
+}
+.file-plate {
+  padding: 20px;
+  display: grid;
+  align-items: flex-start;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.04);
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.file-plate:hover {
+  transform: translateY(-10px);
+}
+.file-plate__name {
+  font: normal 16px "Roboto", sans-serif;
+  line-height: 30px;
+  text-align: center;
+}
+.file-plate__img {
+  height: 100px;
+  margin: 0 auto;
+}
+.file-plate__btns {
+  display: none;
+}
+.file-plate__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.file-plate__btn .file__download {
+  font: normal 16px "Roboto", sans-serif;
+  grid-column-start: 5;
+  display: block;
+  background: #28A745;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+}
+.file-plate__btn .file__download path {
+  fill: #fff;
+}
+.file-plate__btn .file__delete {
+  font: normal 16px "Roboto", sans-serif;
+  grid-column-start: 6;
+  display: block;
+  background: #DC3545;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+}
+.file-plate__btn .file__delete path {
+  fill: #fff;
+}
+.file-plate:hover .file-plate__btns {
+  display: flex;
+}
+/*# sourceMappingURL=file.css.map */

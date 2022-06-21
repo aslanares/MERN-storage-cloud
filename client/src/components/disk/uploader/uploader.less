@@ -1,0 +1,70 @@
+@import "../../../utils/vars";
+@import "../../app";
+
+.uploader {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  background-color: #fff;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+  box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 3%);
+
+  &__file {
+    font-weight: 600;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: @background-color;
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    #close-btn;
+  }
+}
+
+
+.upload-file {
+  background-color: @background-color;
+  box-shadow: inset 0 0 6px 3px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 5px 10px;
+
+  &__remove {
+    #close-btn;
+    background: #fff;
+    color: #191F30;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__progress-bar {
+    height: 1.6rem;
+    display: flex;
+    margin: 10px 0;
+  }
+
+  &__upload-bar {
+    background-color: green;
+    border-radius: 20px;
+  }
+
+  &__percent {
+    color: @background-color;
+    left: 45%;
+    position: absolute;
+  }
+}

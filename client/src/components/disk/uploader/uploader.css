@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #191F30;
+}
+body {
+  background-color: #fffaf4;
+  font: normal 16px "Roboto", sans-serif;
+  color: #757F95;
+  line-height: 1.8;
+}
+#root {
+  width: 100%;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap {
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+}
+input::placeholder {
+  text-transform: capitalize;
+}
+button {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(0.95);
+}
+button .fa {
+  color: #fff;
+}
+.svg-inline--fa {
+  margin: 0 10px;
+  color: #191F30;
+}
+#close-btn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: none;
+  background: #191F30;
+  color: #fff;
+  box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 1024px) {
+  .wrap {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .navbar {
+    padding: 0 30px;
+  }
+  .navbar__profile {
+    height: 35px;
+  }
+  .fileplate {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .fileplate {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .profile {
+    flex-wrap: wrap;
+  }
+  .profile__edit {
+    width: 100% !important;
+  }
+  .profile__info {
+    width: 100% !important;
+    margin: 0 0 30px 0 !important;
+  }
+  .profile__profile {
+    width: 5%;
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrap {
+    padding: 0 15px;
+  }
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+  }
+  .navbar {
+    height: 100%;
+    padding: 15px;
+  }
+  .navbar__logout {
+    order: 2;
+    margin-right: 0;
+  }
+  .navbar__logo,
+  .navbar__search {
+    width: 150px;
+    margin-left: 0;
+  }
+  .navbar__search {
+    order: 3;
+  }
+  .navbar__profile {
+    order: 4;
+    width: 12.5%;
+    margin-left: 15px;
+    margin-top: 0;
+    height: 44px;
+  }
+  .navbar__login {
+    margin-right: 0;
+  }
+  .navbar__registration {
+    margin-left: auto;
+    margin-top: 15px;
+  }
+  .disk__btns {
+    flex-wrap: wrap;
+  }
+  .disk__back,
+  .disk__create {
+    margin-bottom: 15px;
+  }
+  .disk__upload-label {
+    margin-left: 0;
+  }
+  .filelist__header {
+    grid-template-columns: auto;
+  }
+  .file {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .file__name {
+    width: 100px;
+  }
+  .file__btn {
+    margin-top: 15px;
+  }
+  .fileplate {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .authorization {
+    width: 95%;
+  }
+}
+.uploader {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  background-color: #fff;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.03);
+}
+.uploader__file {
+  font-weight: 600;
+}
+.uploader__header {
+  display: flex;
+  justify-content: space-between;
+}
+.uploader__title {
+  color: #fffaf4;
+  font-size: 1.2rem;
+}
+.uploader__close {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: none;
+  background: #191F30;
+  color: #fff;
+  box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+}
+.upload-file {
+  background-color: #fffaf4;
+  box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+.upload-file__remove {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: none;
+  background: #191F30;
+  color: #fff;
+  box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #191F30;
+}
+.upload-file__header {
+  display: flex;
+  justify-content: space-between;
+}
+.upload-file__progress-bar {
+  height: 1.6rem;
+  display: flex;
+  margin: 10px 0;
+}
+.upload-file__upload-bar {
+  background-color: green;
+  border-radius: 20px;
+}
+.upload-file__percent {
+  color: #fffaf4;
+  left: 45%;
+  position: absolute;
+}
+/*# sourceMappingURL=uploader.css.map */

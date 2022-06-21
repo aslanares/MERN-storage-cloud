@@ -1,0 +1,34 @@
+.authorization {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  align-self: center;
+  margin-top: 100px;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.03);
+}
+.authorization__header {
+  font-size: 30px;
+  font-weight: 700;
+}
+.authorization input {
+  margin: 10px 20px;
+}
+.authorization__btn {
+  font: normal 16px "Roboto", sans-serif;
+  border: none;
+  background-color: #191F30;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px;
+  align-self: flex-end;
+  margin-top: 10px;
+  width: 100%;
+}
+.authorization__btn path {
+  fill: #fff;
+}
+/*# sourceMappingURL=authorization.css.map */

@@ -1,0 +1,18 @@
+@import "../vars";
+
+input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 15px 15px 15px;
+  box-shadow: @input-box-shadow;
+  background: #FFFAF4;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow .3s ease;
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 0px 6px 4px rgb(0 0 0 / 7%);
+  }
+}

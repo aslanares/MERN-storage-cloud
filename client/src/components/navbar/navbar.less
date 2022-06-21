@@ -1,0 +1,99 @@
+@import "../../utils/vars";
+
+.navbar {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 3px 5px rgb(0 0 0 / 3%);
+
+  &__logo {
+    width: 200px;
+  }
+
+  &__header {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__logout,
+  &__login {
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &__search {
+    width: 200px;
+    margin-left: 30px;
+  }
+
+  &__profile {
+    display: block;
+    width: 4.5%;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__avatar {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.container {
+  width: 1140px;
+  display: flex;
+  align-items: center;
+
+  a {
+    display: flex;
+  }
+}
+
+.navbar {
+  .navbar__logout,
+  .navbar__login a,
+  .navbar__registration a {
+    font: @main-font-style;
+    display: flex;
+    align-items: center;
+    border: 2px solid @font-color;
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: @font-color;
+      color: #fff;
+      path {
+        transition: all 0.3s ease-in-out;
+        fill: #fff
+      }
+    }
+  }
+
+  .navbar__registration a {
+    background-color: @font-color;
+
+    color: #fff;
+    path {
+      fill: #fff
+    }
+    &:hover {
+      background-color: transparent;
+      color: @font-color;
+      path {
+        transition: all 0.3s ease-in-out;
+        fill: @font-color;
+      }
+    }
+  }
+}

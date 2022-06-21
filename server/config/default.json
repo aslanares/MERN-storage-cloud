@@ -1,0 +1,7 @@
+{
+  "serverPort": 5000,
+  "dbUrl": "mongodb+srv://ares:ChangeMe123@cloud.blvlz.mongodb.net/cloud?retryWrites=true&w=majority",
+  "secretKey": "mern-secret-key",
+  "filePath": "C:\\Users\\Ares\\PhpstormProjects\\MERNcloud\\server\\files",
+  "staticPath": "C:\\Users\\Ares\\PhpstormProjects\\MERNcloud\\server\\static"
+}
